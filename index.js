@@ -50,15 +50,15 @@ function calculateWinner(p1, p2) {
     }
 }
 
+function rollDice(){
+    setImageAttribute()
+    var scores = getDiceValues();
+    
+    var p1 = scores[0];
+    var p2 = scores[1];
+    
+    calculateWinner(p1, p2);
+}
 
-// On window refresh 
-setImageAttribute()
-
-var scores = getDiceValues();
-
-var p1 = scores[0];
-var p2 = scores[1];
-
-calculateWinner(p1, p2);
 
 
